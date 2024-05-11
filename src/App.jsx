@@ -1,10 +1,21 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./index.css";
+import Contact from "./Pages/Contact";
+import Home from "./Pages/Home";
+import Layout from "./Layout";
+import FlashCard from "./Pages/FlashCard";
 
 function App() {
   return (
-    <div>
-      <h1 className="text-blue-800 font-bold text-[10rem]">Hello</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/flashcard" element={<FlashCard />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
