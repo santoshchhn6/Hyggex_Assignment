@@ -3,7 +3,10 @@ import "./index.css";
 import Contact from "./Pages/Contact";
 import Home from "./Pages/Home";
 import Layout from "./Layout";
-import FlashCard from "./Pages/FlashCard";
+import FlashCard from "./Pages/FlashCard/FlashCards";
+import RelationAndFuntion from "./Pages/FlashCard/Math/Topics/RelationAndFuntion";
+import Mathematics from "./Pages/FlashCard/Math/Mathematics";
+import FAQ from "./Pages/FAQ";
 
 function App() {
   return (
@@ -13,6 +16,12 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/flashcard" element={<FlashCard />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/flashcard/mathematics" element={<Mathematics />} />
+          <Route
+            path="/flashcard/mathematics/relation_and_function"
+            element={<RelationAndFuntion />}
+          />
         </Route>
       </Routes>
     </BrowserRouter>

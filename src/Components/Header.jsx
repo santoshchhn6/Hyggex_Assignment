@@ -61,7 +61,7 @@ const Nav = () => {
           onClick={() => {
             navigate(nav.to);
           }}
-          className={`text-gray-500 text-xl  hover:text-blue-600 ease-out duration-300 `}
+          className={`text-gray-500 text-[1.125rem]  hover:text-blue-800 ease-out duration-300 `}
         >
           {nav.title}
         </button>

@@ -21,7 +21,7 @@ const Faq = () => {
   ];
   return (
     <div className="pt-24 pb-72 space-y-12 ">
-      <h1 className="font-bold text-[3rem] bg-gradient-to-b from-blue-950 to-blue-700 text-transparent bg-clip-text">
+      <h1 className="text-center md:text-left font-bold text-[3rem] bg-gradient-to-b from-blue-950 to-blue-700 text-transparent bg-clip-text">
         FAQ
       </h1>
       {faqs.map((e, i) => (
@@ -34,7 +34,7 @@ const Faq = () => {
 const QuestionAnswer = ({ question, answer }) => {
   const [showAnswer, setShowAnswer] = useState(false);
   return (
-    <div className="w-full md:w-[848px]">
+    <div className="w-full lg:w-[848px]">
       <Question
         question={question}
         showAnswer={showAnswer}
@@ -49,7 +49,7 @@ const Question = ({ question, showAnswer, setShowAnswer }) => {
   return (
     <div
       onClick={() => setShowAnswer(!showAnswer)}
-      className=" flex justify-between p-6 rounded-xl cursor-pointer border border-blue-800 text-neutral-800"
+      className=" flex items-center justify-between p-6 rounded-xl cursor-pointer border border-blue-800 text-neutral-800"
     >
       <span className="text-[1rem] font-semibold ">{question}</span>
       {showAnswer ? (

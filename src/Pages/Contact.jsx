@@ -2,13 +2,18 @@ import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import CustomButton from "../Components/CustomButton";
 import CustomInput from "../Components/CustomInput";
 import CustomTextarea from "../Components/CustomTextarea";
-import Heading from "../Components/Heading";
 import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
   return (
     <div>
-      <Heading className={"my-3 md:my-10"}>Contact Us</Heading>
+      <h1
+        className={
+          "text-center text-3xl my-3 md:my-10 font-montserrat font-bold bg-gradient-to-b from-blue-950 to-blue-700 text-transparent bg-clip-text"
+        }
+      >
+        Contact Us
+      </h1>
       <div className="flex flex-col-reverse md:flex-row justify-center gap-3 ">
         <div className="w-full md:max-w-[500px] flex-1 flex gap-5 flex-col items-center border px-6 py-10 bg-white shadow-md">
           <CustomInput placeholder="Name" />
@@ -28,13 +33,13 @@ const Contact = () => {
 const ContactInfo = () => {
   return (
     <div className="flex gap-8 flex-col justify-center">
-      <IconWithLabel label={"Chuo City, Tokyo 104-0045, Japan"}>
+      <IconWithLabel label={"Thane, Maharashtra, India"}>
         <FaMapMarkerAlt />
       </IconWithLabel>
-      <IconWithLabel label={"+81 1234567890"}>
+      <IconWithLabel label={"+91 1234567890"}>
         <FaPhoneAlt />
       </IconWithLabel>
-      <IconWithLabel label={"support@workinjapan.com"}>
+      <IconWithLabel label={"example@gmail.com"}>
         <MdEmail />
       </IconWithLabel>
     </div>
