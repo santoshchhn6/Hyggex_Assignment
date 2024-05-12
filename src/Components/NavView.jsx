@@ -21,7 +21,7 @@ const NavView = () => {
     }
   };
 
-  console.log(location);
+//   console.log(location);
   return (
     <>
       {location.pathname === "/" ? null : (
